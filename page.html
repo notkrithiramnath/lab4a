@@ -1,1 +1,44 @@
+<!DOCTYPE html>
+<head>
+    <title>Contact</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css">
+</head>
+<body>
+    <h1>contact</h1>
+  <form action = "processform.php" method="post"> 
+    <!-- method attr specifies that ifo in body, if "get" it will be in history -->
+    <label for = "name">name</label>
+    <input type  = "text" name = "type" id = "name">
 
+    <label for = "message">Text</label>
+    <textarea id = "message" name = "type"></textarea>
+
+    <select id = "priority" name = "type">
+        <option value = "1">LOW</option>
+        <option value = "2" selected>Medium</option>
+        <option value = "3">high</option>
+    </select>
+    <label>
+        <fieldset>
+            <legend>Type</legend>
+        <input type = "radio" name = "type" value = "1">
+    complaint
+    </label>
+
+    <br>
+    <label>
+        <input type = "radio" name = "type" value = "2" checked>
+    suggestion
+    </label>
+</fieldset>
+<label>
+<input type  = "checkbox" name = "type">
+I agree to terms 
+</label>
+<br>
+<button> SUBMIT</button>
+
+  </form>
+</body>
+</html>
